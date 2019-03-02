@@ -1,0 +1,30 @@
+<ion-view>
+	<ion-content class="fondo1">
+		<div class="row altoTotal espacio">
+			<div class="col altoTotal">
+				<div class="login altoTotal">
+					<ul class="estiloLista centrado">
+						<li>
+							<img src="http://archicad.uy/wp-content/uploads/2018/07/boton-registrate.png">
+						</li>
+						<li>
+							<input type="text" placeholder="Email" class="linea2" ng-model="user.email" >
+						</li>
+						<li>
+							<input type="text" placeholder="Username" class="linea2" ng-model="user.name">
+						</li>
+						<li>
+							<input type="password" placeholder="password" class="linea2" ng-model="user.password">
+						</li>
+						<li>
+							<input type="text" placeholder="Confirm email" class="linea2" ng-model="user.verification">
+						</li>
+						<li>
+							<button type="button" ng-click="registro(user)" class="boton2">Resgistrate!</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>
