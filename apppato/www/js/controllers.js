@@ -37,12 +37,13 @@ var config = {
 .controller("inicioCRTL",function($scope){
   console.log("Entra inicio");
 
-    $scope.insert = files[0].name;
+
 
 
    function handleFileSelect(evt) {
    var files = evt.target.files; // FileList object
-   console.log(files[0].name)
+   console.log(files[0].name);
+   $scope
    // Loop through the FileList and render image files as thumbnails.
    for (var i = 0, f; f = files[i]; i++) {
 
@@ -74,11 +75,14 @@ var config = {
 
 
      $scope.img=function(){
-      var storageRef = storage.ref();  
+      
+      /*    var storageRef = storage.ref();  
       var file = files; // use the Blob or File API
       ref.put(file).then(function(snapshot) {
       console.log('Uploaded a blob or file!');
-    })
+    })*/
+
+    console.log("imagen guardada.");
 
      }
 
