@@ -40,6 +40,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     url: '/tab',
     abstract: true,
     templateUrl: 'templates/tabs.html'
+      })
+
+
+    .state("inicio",{
+      url:'/inicio',
+      templateUrl:"templates/inicio.html",
+      controller:"inicioCRTL"
   })
     .state("login",{
       url:'/login',
@@ -51,6 +58,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       controller:"registroCtrl"
       })
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/registro');
+  $urlRouterProvider.otherwise('/inicio');
 
 });
